@@ -1,0 +1,58 @@
+# OAuth credential for the Twitter API
+token_1: {
+'oauth_token': "",
+'oauth_secret': "",
+'consumer_key': "",
+'consumer_secret': "",
+}
+token_2: {
+'oauth_token': "",
+'oauth_secret': "",
+'consumer_key': "",
+'consumer_secret': "",
+}
+token_3: {
+'oauth_token': "",
+'oauth_secret': "",
+'consumer_key': "",
+'consumer_secret': ""
+}
+token_4: {
+'oauth_token': "",
+'oauth_secret': "",
+'consumer_key': "",
+'consumer_secret': "",
+}
+
+# URL of the Twitter API for the sample stream
+url_sample: https://stream.twitter.com/1.1/statuses/sample.json
+# URL of the Twitter API for the keyword search stream
+url_filter: https://stream.twitter.com/1.1/statuses/filter.json
+# URL of the Twitter API for the user timeline
+url_user: https://api.twitter.com/1.1/statuses/user_timeline.json
+url_friend_user: https://api.twitter.com/1.1/friends/ids.json
+url_user_name: https://api.twitter.com/1.1/users/show.json
+
+# number of tweets to download in one batch
+tweets_count: 200
+# waiting time between batches
+wait: 20
+# include retweets
+retweets: true
+# set the max number of tweets
+max_amount: 1500
+friends_count: 25
+language: 'en'
+
+#the result of crawling is a set of users or one users
+crawl_way: 'net'  # or 'single'
+# the require of crawling, the sprcific users or words
+crawl_require: 'users'  # or 'keywords'
+
+keywords: ['#HongKongProtests','#StandwithHK','#FreeHongKong','#HongKongPLG']
+users: ['SolomonYue','Jkylebass','EnzoMazak','ElliottZaagman','BeLightinHK','damon_pang','alvinllum','sumlokkei']
+
+# the output file of tweets
+fd_out: "OUTPUT/"
+# the output file of profiles
+pf_out: 'Profile/'
